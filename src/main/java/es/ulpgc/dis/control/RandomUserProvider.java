@@ -10,14 +10,12 @@ import java.io.IOException;
 import java.util.Random;
 
 public class RandomUserProvider implements UserProvider {
-    private static final String URL = "https://randomuser.me/api/";
-
+    private static final  String URL = "https://randomuser.me/api/";
 
     @Override
     public User newUser() throws IOException {
-        Connection connect = Jsoup.connect(URL).ignoreContentType(true);
+        Connection connect = Jsoup.connect("https://randomuser.me/api/").ignoreContentType(true);
         RandomUserResponse response = new Gson().fromJson(connect.get().text(), RandomUserResponse.class);
-        return new RandomUserAdapter().from(response.getResult().getFirst());
-
+        return new RandomUserAdapter().from(response.getResults().getFirst());
     }
 }
