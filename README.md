@@ -23,5 +23,4 @@ El proyecto contiene las siguientes clases y paquetes:
   - `User`: Clase que representa un usuario en el modelo de la aplicación.
 - `view`
   - `UserPanel`: Clase que representa el panel de usuario en la interfaz gráfica.
-- `main`
-  - `Main`: Clase principal que ejecuta la aplicación.
+- `Main`: Clase principal que ejecuta la aplicación.
