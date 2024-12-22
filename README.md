@@ -1,4 +1,4 @@
-# Random User Generator
+# Kata 5
 
 Este proyecto es una aplicación que genera usuarios aleatorios utilizando la API de RandomUser. Los datos de los usuarios se adaptan y se muestran en una interfaz gráfica.
 
